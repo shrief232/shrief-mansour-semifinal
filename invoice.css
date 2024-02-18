@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero_section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-left: 15rem;
+}
+.invoice-container {
+    
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgba(128, 0, 128, 0.698);
+    align-items: center;
+    align-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#tbody td{
+    width: 100% ;
+}
+  
+th, td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgba(128, 0, 128, 0.698);
+}
+  
+th{
+    background-color: rgba(128, 0, 128, 0.698);
+    color: white;
+}
+
+  

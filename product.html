@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap-grid.min.css" integrity="sha512-zDDxSlYrbKTTfup/YyljmstpX+1jwjeg15AKS/fl26gRxfpD+HMr6dfuJQzCcFtoIEjf93SuCffose5gDQOZtg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/hostyle.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="body">
+    <div class="menu">
+      <ul>
+          <li class="profile">
+              <div class="img-box">
+                  <img src="./images/hero-logo.webp" alt="profile">
+              </div>
+              <h2>Eraa Soft</h2>
+          </li>
+          <li>
+            <a class="active" href="./home.html">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+             <a href="./clients.html">
+               <i class="fas fa-user-group"></i>
+               <p>Clients</p>
+             </a>
+          </li>
+          <li>
+            <a href="#">
+               <i class="fas fa-table"></i>
+                <p>products</p>
+             </a>
+          </li>
+          <li>
+             <a href="#">
+          <i class="fas fa-chart-pie"></i>
+           <p>charts</p>
+             </a>
+          </li>
+          <li>
+             <a href="./salesorder.html">
+             <i class="fas fa-pen"></i>
+              <p>Sales order</p>
+             </a>
+          </li>
+          <li>
+            <a href="#">
+             <i class="fas fa-star"></i>
+             <p>Favourite</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+               <i class="fas fa-cog"></i>
+                 <p>sittings</p>
+            </a>
+          </li>
+          <li class="log-in">
+              <a href="#">
+                 <i class="fas fa-sign-in"></i>
+                  <p>Log in</p>
+               </a>
+            </li>
+          <li class="log-out">
+            <a href="#">
+               <i class="fas fa-sign-out"></i>
+                <p>log out</p>
+             </a>
+          </li>
+
+      </ul>
+  </div>
+  <div class="warehouse">
+      <div class="head">
+          <h2>warehouse</h2>
+          <p>product management</p>
+      </div>
+      
+      <div class="inputs">
+          <input placeholder="title" type="text" id="title">
+          <div class="price">
+              <input onkeyup="gettotal()" type"number" id="price" placeholder="price">
+              <input onkeyup="gettotal()" type"number" id="taxes" placeholder="taxes">
+              <input onkeyup="gettotal()" type"number" id="ads" placeholder="ads">
+              <input onkeyup="gettotal()" type"number" id="discount" placeholder="discount">
+              <small id="total">0</small>
+          </div>
+          <input placeholder="count" type="number" id="count">
+          <input placeholder="category" type="text" id="category">
+          <button onclick="submit()" id="submit">create</button>
+      </div>
+      <div class="outputs">
+          
+          <div id="DeleteAll">
+              
+          </div>
+          <table>
+              <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>price</th>
+                  <th>taxes</th>
+                  <th>ads</th>
+                  <th>discount</th>
+                  <th>total</th>
+                  <th>count</th>
+                  <th>category</th>
+                  <th>update</th>
+                  <th>delete</th>
+              </tr>
+
+              <tbody id="tbody">
+                
+                  
+              </tbody>
+          </table>
+      </div>
+      
+
+  </div>
+
+  </div>
+   
+    <script src="./app.js"></script>
+</body>
+</html>

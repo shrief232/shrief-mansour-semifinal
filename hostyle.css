@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+
+}
+.body{
+    background-color: rgb(8 9 10);
+    display: flex;
+    background-image: url(../images/body-top-bg.png);
+    background-size: 100%;
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 30px solid rgba(57, 2, 57, 0.811);
+    flex-shrink: 0;
+
+}
+.img-box img{
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background-color: rgba(128, 0, 128, 0.374);
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: inherit;
+    
+}
+.menu:hover{
+    width: 260px;
+    z-index: inherit;
+    
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+ul li a:hover{
+    background-color: rgb(194, 77, 194);
+
+}
+ul li a:hover, .active, .data-info .box:hover{
+    background-color:  #ffffff55;
+
+}
+.log-in{
+    position: absolute;
+    bottom: 0.1;
+    width: 100%;
+}
+.log-in a{
+    background-color: rgba(0, 128, 0, 0.551);
+}
+
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: rgba(170, 0, 0, 0.577);
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+    
+    
+}
+.title-info{
+    background-color: #8481ff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+
+.warehouse{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.01);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: red;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'total';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: rgba(128, 0, 128, 0.716);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: rgb(59, 2, 59);
+    letter-spacing: 1px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 45%;
+}
+#DeleteAll{
+    margin: 20px 0;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 6rem; 
+    padding-top: 3rem;
+}
+.ul-header{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.hero-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.main-section{
+    width: 70%;
+}
+.main-section h2{
+    font-size: 60px; 
+}
+.main-section p{
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 2rem;
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    
+}
+
